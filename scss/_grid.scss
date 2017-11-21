@@ -1,0 +1,44 @@
+@import 'variables';
+
+.content-container{
+    background-image: url("../image/background.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Helvetica;
+
+    .row {
+        position: relative;
+
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        [class*='col-'] {
+            min-height: 1px;
+            float: left;
+            padding: 10px;
+            word-wrap: break-word;
+        }
+        @for $i from 1 through $columns {
+            .col-#{$i} {
+                width: $base-width * $i;
+            }
+        }
+    }
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}

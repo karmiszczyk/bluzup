@@ -1,0 +1,21 @@
+.wrapper-footer{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #161343;
+    p {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.address-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

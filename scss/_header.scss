@@ -1,0 +1,55 @@
+@import 'variables';
+
+header {
+    background-color: rgba(0, 0,0 ,0.35);
+    color: black;
+    height: 124px;
+    font-size: 10px;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 47px;
+
+    img{
+        width: 195px;
+        height: 31px;
+    }
+}
+
+.menu {
+    margin-top: 66px;
+}
+
+#cssmenu {
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+}
+
+#cssmenu > ul > li {
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+}
+
+#cssmenu > ul > li > a {
+    color: $defaultFontColor;
+    font-size: 13px;
+    strong{
+        color:$strongColor;
+    }
+}
